@@ -1,56 +1,54 @@
-# Raspberry-PI_SHT31_Firebase
-  In this project I am going to post the real time data of temperature and humidity sensor to the Firebase database.
-  I am using SHT31 Sensor to communicate with raspberry pi using I2C connection adapters
-
-## For Raspberry Pi Setup 
-  Please check out here
-
-## Devices used in project 
-
-  - Raspberry Pi 3 Model B
-  - SHT31 I2C mini module
-  - Raspberry Pi I2C adapter
-  - I2C cable
+# Create Firebase Setup
+ 
+ Log in to firebase console
   
-*Connect the Raspberry Pi GPIO pins with I2C adapter
-
-*Using I2C cable, connect SHT31 sensor with 'IN' port available on sensor
-
-### First Step after Physical connections 
-
-  After Physical connection between SHT31(Temperature and humidity sensor) and Raspberry Pi:
-    
-   - Check the LED status which shows the power Connection in I2C adapter(connected with GPIO pins of RPI3) as well as in SHT31
-   - After power connection open CLI of Raspberry Pi 
-   - Configure all the general commands which are mentioned in "Raspberry-PI-" folder
-   - detect I2C register of sensor using comman i2cdetect -y 1
-   - configure firebase using "sudo pip install python-firebase"
-    
-## How to use firebase after configuration in RPI3
-
-you may also learn simple documentation - mentioned in reading section of "Firebase_Python" folder
-
-    //This code should be used with every script that you will be using to connect to the Firebase database.
-    //Importing I2C, Time, Firebase library in python code.
-    import smbus
-    import time
-    from firebase import firebase
-    
-    // IN LAST USE: 
-    //store the Host ID(provided in firebase database) in variable where you want to send the real time sensor data.  
-    firebase= firebase.FirebaseApplication('host id mentioned in databse of firebase')
-
-    //store the readings in variable and convert it into string and using firbase.post then data will be posted to databse of firebase 
-    result = firebase.post('host id mentioned', {'cTemp':str(cTemp),'ftemp':str(fTemp), 'humidity':str(humidity)})
-    print(result)
-   
- Download (or git pull) the code in pi. Run the program.
+  - Click on "Add Project"
+  ![alt text](https://github.com/varul29/Raspberry-PI-/blob/master/Add%20project.PNG)
+  - Write Project name 
+  - Accept controller-controller terms
+  ![alt text](https://github.com/varul29/Raspberry-PI-/blob/master/Project%20name.PNG)
+  - Click create project
+  - Click "Database" (mentioned in left handside)
+  ![alt text](https://github.com/varul29/Raspberry-PI-/blob/master/Database.PNG)
+  - Click on "Create Database"
+  ![alt text](https://github.com/varul29/Raspberry-PI-/blob/master/Create%20databse.PNG)
+  - According to newwer version - you can choose either locked version or unlocked version and press Ok
+  - Choose Realtime Database(mentioned in the image)
+  ![alt text](https://github.com/varul29/Raspberry-PI-/blob/master/Real%20time%20database.PNG)
+  - Click on "Rules"
+  ![alt text](https://github.com/varul29/Raspberry-PI-/blob/master/Rules.PNG)
+  
+  (If in default security rules code is mentioned like this)
       
-      $> python SHT31.py
+        {
+          "rules": { 
+            "read": "auth != null"
+            "write": "auth != null"
+            }
+         }
+  ### Then change "auth != null" into "true"
+  
+        {
+              "rules": { 
+                "read": "true"
+               "write": "true"
+                }
+         }
+         
+  - click on Publish
+  ![alt text](https://github.com/varul29/Raspberry-PI-/blob/master/ruels%20change.PNG)
+  
+  - While creating code, we have to use the Host Id "https://tahsensor.firebase.com/" (which will be different for every users)
+  ![alt text](https://github.com/varul29/Raspberry-PI-/blob/master/hostid.PNG)
+  
+ At last after performing all the certain parameters mentioned abve as well as for different sensor code, 
+ The output of database will be appear as mentioned below in snap
+ 
+  ![alt text](https://github.com/varul29/Raspberry-PI-/blob/master/Sample%20Data.PNG)
  
  
- ### Note: This code is to post the Temeprature and humidiy sensor data for only one go.  
-
+ 
+      
 
 
 
