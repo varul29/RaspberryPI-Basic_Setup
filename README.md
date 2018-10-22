@@ -12,7 +12,8 @@
   - Raspberry Pi I2C adapter
   - I2C cable
   
-*Connect the Raspberry Pi GPIO pins with I2C adapter 
+*Connect the Raspberry Pi GPIO pins with I2C adapter
+
 *Using I2C cable, connect SHT31 sensor with 'IN' port available on sensor
 
 ### First Step after Physical connections 
@@ -27,27 +28,28 @@
     
 ## How to use firebase after configuration in RPI3
 
-you may also learn simple documentation - mentioned in reading section of "Raspberry-Pi-" folder
+you may also learn simple documentation - mentioned in reading section of "Firebase_Python" folder
 
-    #This code should be used with every script that you will be using to connect to the Firebase database.
-    #Importing I2C, Time, Firebase library in python code.
+    //This code should be used with every script that you will be using to connect to the Firebase database.
+    //Importing I2C, Time, Firebase library in python code.
     import smbus
     import time
     from firebase import firebase
     
-    # IN LAST USE: 
-    #store the Host ID(provided in firebase database) in variable where you want to send the real time sensor data.  
+    // IN LAST USE: 
+    //store the Host ID(provided in firebase database) in variable where you want to send the real time sensor data.  
     firebase= firebase.FirebaseApplication('host id mentioned in databse of firebase')
 
-    #store the readings in variable and convert it into string and using firbase.post then data will be posted to databse of firebase 
+    //store the readings in variable and convert it into string and using firbase.post then data will be posted to databse of firebase 
     result = firebase.post('host id mentioned', {'cTemp':str(cTemp),'ftemp':str(fTemp), 'humidity':str(humidity)})
     print(result)
    
  Download (or git pull) the code in pi. Run the program.
+      
       $> python SHT31.py
  
  
- ##Note: This code is to post the Temeprature sensor data for only one go.  
+ ## Note: This code is to post the Temeprature and humidiy sensor data for only one go.  
 
 
 
