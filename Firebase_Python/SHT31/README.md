@@ -29,7 +29,7 @@
     
    - Check the LED status which shows the power Connection in I2C adapter(connected with GPIO pins of RPI3) as well as in SHT31
    - After power connection open CLI of Raspberry Pi 
-   - Configure all the general commands which are mentioned in "[Raspberry-PI-]"(https://github.com/varul29/Raspberry-PI-/blob/master/README.md) folder
+   - Configure all the general commands which are mentioned in ["Raspberry-PI-"](https://github.com/varul29/Raspberry-PI-/blob/master/README.md) folder
    - detect I2C register of sensor using comman i2cdetect -y 1
    - configure firebase using "sudo pip install python-firebase"
     
