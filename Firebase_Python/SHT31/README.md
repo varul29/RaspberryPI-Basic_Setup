@@ -16,9 +16,9 @@
   
   - I2C cable
   
-*Connect the Raspberry Pi GPIO pins with I2C adapter
+***Connect the Raspberry Pi GPIO pins with I2C adapter
 
-*Using I2C cable, connect SHT31 sensor with 'IN' port available on sensor
+***Using I2C cable, connect SHT31 sensor with 'IN' port available on sensor
 
 ### First Step after Physical connections 
 
