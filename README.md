@@ -15,7 +15,7 @@
 *Connect the Raspberry Pi GPIO pins with I2C adapter 
 *Using I2C cable, connect SHT31 sensor with 'IN' port available on sensor
 
-### First Step To after Physical connections
+### First Step after Physical connections 
 
   After Physical connection between SHT31(Temperature and humidity sensor) and Raspberry Pi:
     
