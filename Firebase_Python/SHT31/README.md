@@ -2,10 +2,7 @@
   In this project I am going to post the real time data of temperature and humidity sensor to the Firebase database.
   I am using SHT31 Sensor to communicate with raspberry pi using I2C connection adapters
 
-## For Raspberry Pi Setup 
-  Please check out here
-
-## Devices used in project 
+## Setup for the Devices used in project 
 
   - Raspberry Pi 3 Model B
   
