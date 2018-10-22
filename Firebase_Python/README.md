@@ -50,9 +50,11 @@
          }
          
   - click on "Publish".
+  
   ![alt text](https://github.com/varul29/Raspberry-PI-/blob/master/ruels%20change.PNG)
   
   - While creating code, we have to use the Host Id "https://tahsensor.firebase.com/" (which will be different for every users)
+  
   ![alt text](https://github.com/varul29/Raspberry-PI-/blob/master/hostid.PNG)
   
  At last after performing all the certain parameters mentioned above as well as for different sensor code, 
