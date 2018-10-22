@@ -36,8 +36,8 @@ print "Relative Humidity is : %.2f %%RH" %humidity
 time.sleep(5) #5milliseconds
 
 #store the Host ID(provided in firebase database) in variable where you want to send the real time sensor data.  
-firebase= firebase.FirebaseApplication('https://temperature-sensor-bb4bd.firebaseio.com/')
+firebase= firebase.FirebaseApplication('HOST ID')
 
 #store the readings in variable and convert it into string and using firbase.post then data will be posted to databse of firebase 
-result = firebase.post('/temperature-sensor-bb4bd', {'cTemp':str(cTemp),'ftemp':str(fTemp), 'humidity':str(humidity)})
+result = firebase.post('Project Name', {'cTemp':str(cTemp),'ftemp':str(fTemp), 'humidity':str(humidity)})
 print(result)
