@@ -9,6 +9,9 @@
 
   - Raspberry Pi 3 Model B
   - SHT31 I2C mini module
+   
+   ![alt text](https://store.ncd.io/product/sht31-humidity-and-temperature-sensor-%C2%B12rh-%C2%B10-3c-i2c-mini-module/)
+   
   - Raspberry Pi I2C adapter
   - I2C cable
   
