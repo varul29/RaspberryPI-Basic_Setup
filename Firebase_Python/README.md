@@ -49,7 +49,7 @@ you may also learn simple documentation - mentioned in reading section of "Fireb
       $> python SHT31.py
  
  
- ## Note: This code is to post the Temeprature and humidiy sensor data for only one go.  
+ ### Note: This code is to post the Temeprature and humidiy sensor data for only one go.  
 
 
 
