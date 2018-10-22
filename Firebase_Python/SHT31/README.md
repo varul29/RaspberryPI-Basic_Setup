@@ -8,11 +8,12 @@
 ## Devices used in project 
 
   - Raspberry Pi 3 Model B
-  - SHT31 I2C mini module
+  
+  - [SHT31](https://store.ncd.io/product/sht31-humidity-and-temperature-sensor-%C2%B12rh-%C2%B10-3c-i2c-mini-module/) I2C mini module sensor
    
    ![alt text](https://github.com/varul29/Raspberry-PI-/blob/master/Firebase_Python/SHT31%20I2CS.png)
    
-  - Raspberry Pi I2C adapter
+  - Raspberry Pi [I2C adapter](https://store.ncd.io/product/i2c-shield-for-raspberry-pi-3-pi2-with-inward-facing-i2c-port/)
   
   ![alt text](https://github.com/varul29/Raspberry-PI-/blob/master/Firebase_Python/I2C%20adapter.png)
   
