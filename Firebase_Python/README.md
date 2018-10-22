@@ -32,7 +32,7 @@
   
   ![alt text](https://github.com/varul29/Raspberry-PI-/blob/master/Rules.PNG)
   
-  (If in default security rules code is mentioned like this)
+  ### If in default security rules code is mentioned like below
       
         {
           "rules": { 
