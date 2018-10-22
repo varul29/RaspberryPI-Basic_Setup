@@ -10,9 +10,12 @@
   - Raspberry Pi 3 Model B
   - SHT31 I2C mini module
    
-   ![alt text](https://store.ncd.io/product/sht31-humidity-and-temperature-sensor-%C2%B12rh-%C2%B10-3c-i2c-mini-module/)
+   ![alt text](https://github.com/varul29/Raspberry-PI-/blob/master/Firebase_Python/SHT31%20I2CS.png)
    
   - Raspberry Pi I2C adapter
+  
+  ![alt text](https://github.com/varul29/Raspberry-PI-/blob/master/Firebase_Python/I2C%20adapter.png)
+  
   - I2C cable
   
 *Connect the Raspberry Pi GPIO pins with I2C adapter
@@ -25,13 +28,13 @@
     
    - Check the LED status which shows the power Connection in I2C adapter(connected with GPIO pins of RPI3) as well as in SHT31
    - After power connection open CLI of Raspberry Pi 
-   - Configure all the general commands which are mentioned in "Raspberry-PI-" folder
+   - Configure all the general commands which are mentioned in "[Raspberry-PI]-" folder
    - detect I2C register of sensor using comman i2cdetect -y 1
    - configure firebase using "sudo pip install python-firebase"
     
 ## How to use firebase after configuration in RPI3
 
-you may also learn simple documentation - mentioned in reading section of "Firebase_Python" folder
+you may also learn simple documentation - mentioned in reading section of ["Firebase_Python"](https://github.com/varul29/Raspberry-PI-/blob/master/Firebase_Python/README.md) folder
 
     //This code should be used with every script that you will be using to connect to the Firebase database.
     //Importing I2C, Time, Firebase library in python code.
